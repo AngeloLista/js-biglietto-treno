@@ -23,11 +23,19 @@ const age = prompt('Quanti anni hai?')
 
 // Calcolo prezzo
 let price = distance * 0.21
+
 console.log(price)
 
 // Sconti per età
-let priceUnder18 = price * 0.20
-let priceOver65 = price * 0.40
+let priceUnder18 = price * 0.80
+let priceOver65 = price * 0.60
 
-console.log(priceUnder18)
-console.log(priceOver65)
+if (age >= 65) {
+    console.log(`Hai ricevuto lo sconto Over 65. Il prezzo del tuo biglietto è di ${priceOver65}€.`)
+}
+else if (age <= 18) {
+    console.log(`Hai ricevuto lo sconto Over 18. Il prezzo del tuo biglietto è di ${priceUnder18}€.`)
+}
+else {
+    console.log(`Il prezzo del tuo biglietto è di ${price}€.`)
+}
