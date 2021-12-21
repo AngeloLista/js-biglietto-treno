@@ -18,7 +18,7 @@ Applicare un po' di CSS se siete riusciti a fare il bonus 1 */
 console.log('JS OK');
 
 // Richiesta informazioni utente
-const distance = prompt('Quanti kilometri percorrerai?')
+const distance = prompt('Quanti kilometri percorrerai?');
 
 // Distance input validation
 if (isNaN(distance)) {
