@@ -15,7 +15,7 @@ Cercare, sulla base di quanto visto, di effettuare un minimo di validazione.
 
 BONUS 3
 Applicare un po' di CSS se siete riusciti a fare il bonus 1 */
-console.log('JS OK')
+console.log('JS OK');
 
 // Richiesta informazioni utente
 const distance = prompt('Quanti kilometri percorrerai?')
@@ -23,22 +23,20 @@ const distance = prompt('Quanti kilometri percorrerai?')
 // Distance input validation
 if (isNaN(distance)) {
     alert("ERRORE: Inserisci la distanza nel formato corretto. Ricarica la pagina.")
-}
+};
 
 // Age input validation
 const age = prompt('Quanti anni hai?')
 if (isNaN(age)) {
     alert("ERRORE: Inserisci l'età nel formato corretto. Ricarica la pagina.")
-}
+};
 
 // Calcolo prezzo
-let price = distance * 0.21
-
-console.log(price)
+let price = distance * 0.21;
 
 // Sconti per età
-let priceUnder18 = price * 0.80
-let priceOver65 = price * 0.60
+let priceUnder18 = price * 0.80;
+let priceOver65 = price * 0.60;
 
 if (age >= 65) {
     console.log(`Hai ricevuto lo sconto Over 65. Il prezzo del tuo biglietto è di ${priceOver65}€.`)
@@ -49,7 +47,6 @@ else if (age <= 18) {
     document.writeln(`Hai ricevuto lo sconto Over 18. Il prezzo del tuo biglietto è di ${priceUnder18}€.`)
 }
 else {
-    console.log(`Il prezzo del tuo b    iglietto è di ${price}€.`)
+    console.log(`Il prezzo del tuo biglietto è di ${price}€.`)
     document.writeln(`Il prezzo del tuo biglietto è di ${price}€.`)
-}
-
+};
