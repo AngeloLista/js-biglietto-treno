@@ -32,10 +32,14 @@ let priceOver65 = price * 0.60
 
 if (age >= 65) {
     console.log(`Hai ricevuto lo sconto Over 65. Il prezzo del tuo biglietto è di ${priceOver65}€.`)
+    document.writeln(`Hai ricevuto lo sconto Over 65. Il prezzo del tuo biglietto è di ${priceOver65}€.`)
 }
 else if (age <= 18) {
     console.log(`Hai ricevuto lo sconto Over 18. Il prezzo del tuo biglietto è di ${priceUnder18}€.`)
+    document.writeln(`Hai ricevuto lo sconto Over 18. Il prezzo del tuo biglietto è di ${priceUnder18}€.`)
 }
 else {
     console.log(`Il prezzo del tuo biglietto è di ${price}€.`)
+    document.writeln(`Il prezzo del tuo biglietto è di ${price}€.`)
 }
+
