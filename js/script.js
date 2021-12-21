@@ -19,7 +19,17 @@ console.log('JS OK')
 
 // Richiesta informazioni utente
 const distance = prompt('Quanti kilometri percorrerai?')
+
+// Distance input validation
+if (isNaN(distance)) {
+    alert("ERRORE: Inserisci la distanza nel formato corretto. Ricarica la pagina.")
+}
+
+// Age input validation
 const age = prompt('Quanti anni hai?')
+if (isNaN(age)) {
+    alert("ERRORE: Inserisci l'età nel formato corretto. Ricarica la pagina.")
+}
 
 // Calcolo prezzo
 let price = distance * 0.21
@@ -39,7 +49,7 @@ else if (age <= 18) {
     document.writeln(`Hai ricevuto lo sconto Over 18. Il prezzo del tuo biglietto è di ${priceUnder18}€.`)
 }
 else {
-    console.log(`Il prezzo del tuo biglietto è di ${price}€.`)
+    console.log(`Il prezzo del tuo b    iglietto è di ${price}€.`)
     document.writeln(`Il prezzo del tuo biglietto è di ${price}€.`)
 }
 
